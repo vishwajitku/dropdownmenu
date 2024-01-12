@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --bg-main: #18122b;
+  --bg-primary: #ecf2ff;
+}
+
+body {
+  background-color: rgb(40, 38, 38);
+}
+
+a,
+li {
+  margin: 0;
+  /* font-size: 1.8rem; */
+  color: var(--bg-primary);
+}
+
+header {
+  /* height: 10rem; */
+  color: var(--bg-primary);
+  background-color: #18122b;
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  /* height: 10rem; */
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #18122b;
+}
+
+.container .logo {
+  color: rgb(22, 116, 193);
+  font-size: 25px;
+  font-family: 'Monoton', cursive;
+}
+.container .logo span {
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Monoton', cursive;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  /* height: 10rem; */
+  line-height: 5rem;
+}
+.container .drop-down {
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  min-width: 8rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #18122b;
+  align-items: center;
+  padding: 1.5rem 0;
+  gap: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container ul li:hover > .drop-down {
+  visibility: visible;
+  opacity: 1;
+  top: 5rem;
+}
+
+.container .drop-down li {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  /* border: 1px solid red; */
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.container .drop-down li:hover {
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.container ul li {
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.container ul li:hover {
+  color: rgb(103, 166, 217);
+}
+
+/* <!-----------------------------------------------------hero section--------------------------------> */
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('images/mailchimp-mpwF3Mv2UaU-unsplash.jpg');
+  background-size: 100% 100%;
+  padding: 0px 20px;
+}
